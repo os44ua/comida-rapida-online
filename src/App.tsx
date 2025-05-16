@@ -1,4 +1,4 @@
-import { useState, createContext, useEffect } from 'react'
+import { useState, createContext } from 'react'
 import './App.css'
 import type { MenuItem } from './entities/entities'
 import { lazy, Suspense } from 'react';
