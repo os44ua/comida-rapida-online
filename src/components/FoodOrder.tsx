@@ -47,7 +47,11 @@ const FoodOrder = ({ food, onReturnToMenu }: FoodOrderProps) => {
 
       {/*<img src={`/images/${food.image}`} alt={food.name} className="foodOrderImg" />*/}
       {/*para publicacion en GitPages cambiamos la ruta de imagenes*/}
-      <img src={`${import.meta.env.VITE_APP_BASE_URL || '/'}images/${food.image}`} alt={food.name} />
+     <img 
+        src={`${import.meta.env.VITE_APP_BASE_URL || '/'}images/${food.image}`} 
+        alt={food.name} 
+        className="foodOrderImg" 
+      />
 
       <p className="foodOrderDesc">{food.desc}</p>
       <p className="foodOrderPrice">{food.price}€ por unidad</p>
